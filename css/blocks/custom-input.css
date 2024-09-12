@@ -25,3 +25,13 @@
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
+.custom-input__inner-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.custom-input__inner-right {
+  display: flex;
+  flex-direction: column;
+}
