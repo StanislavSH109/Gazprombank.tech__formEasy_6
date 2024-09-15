@@ -253,8 +253,28 @@
                         <input class="custom-input__field" type="text"  name="name-person" placeholder="ФИО сотрудника" aria-label="ФИО сотрудника" required>
                       </div>
                   </div>
-
                 </fieldset>
+                <fieldset class="form__group">
+                  <legend class="form__group-name">Откуда узнал(а) о нас?</legend>
+                  <div class="custom-input__inner">
+                        <div class="custom-input custom-input--flat">
+                          <input class="custom-input__radio" form="radio-event" type="radio" value="event" name="radio-event" aria-label="Мероприятие" required>
+                          <label class="custom-input__radio-label" for="radio-event">Мероприятие</label>
+                          <input class="custom-input__radio" type="radio" value="specialist" name="radio-specialist" aria-label="Специалист" required>
+                          <label class="custom-input__radio-label" for="radio-specialist" >Специалист</label>
+                          <input class="custom-input__field custom-input__field--specialist" type="text"  name="name-person" placeholder="Иван Иванов" aria-label="ФИО сотрудника" required>
+                        </div>
+                    </div>
+                  </fieldset>
+                  <fieldset class="form__group">
+                    <div class="custom-input  custom-input--flat">
+                      <input class="custom-input__field  custom-input--flat" type="text" name="message-candidate" placeholder="Сообщение" aria-label="Сообщение" required>
+                    </div>
+                </fieldset>
+                <div class="form__personal-data">
+                  <label class="form__personal-data-label" for="">Даю согласие на обработку персональных данных</label>
+                  <input class="form__personal-data-label" type="checkbox" name="" id="">
+                </div>
             </form>
           </div>
         </div>
