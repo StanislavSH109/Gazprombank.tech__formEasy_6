@@ -242,13 +242,18 @@
                   <label for="" class="form__group-label">Сервисы для отделений</label>
                 </div>
               </fieldset>
-              <fieldset class="form__group"></fieldset>
-                <legend class="form__group-name">Добавь ссылку на презентацию проекта</legend>
+              <fieldset class="form__group">
+                <legend class="form__group-name">Работал(а) ли ты раньше с Газпромбанком?</legend>
                 <div class="custom-input__inner">
                       <div class="custom-input custom-input--flat">
-                        <input class="custom-input__field custom-input--flat" type="url" name="company-link" placeholder="Ссылка*" aria-label="ссылка" required>
+                        <input class="custom-input__radio" form="radio-yes" type="radio" value="Да" name="radio-yes" placeholder="Да" aria-label="Да" required>
+                        <label for="radio-yes" class="custom-input__radio-label">Да</label>
+                        <input class="custom-input__radio" type="radio" value="Нет" name="radio-no" placeholder="Нет" aria-label="Да" required>
+                        <label class="custom-input__radio-label" for="radio-no" >Нет</label>
+                        <input class="custom-input__field" type="text"  name="name-person" placeholder="ФИО сотрудника" aria-label="ФИО сотрудника" required>
                       </div>
                   </div>
+
                 </fieldset>
             </form>
           </div>
