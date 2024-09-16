@@ -85,7 +85,7 @@
                   </div>
                   <div class="form__group-inner-right">
                     <div class="custom-input">
-                      <label class="custom-input__label" for="email" id="email">Почта*</label>
+                      <label class="custom-input__label" for="email">Почта*</label>
                       <input class="custom-input__field" type="email" name="email" placeholder="E-mail*" id="email" aria-label="email" required>
                       <svg class="custom-input__field-icon" width="20" height="20" aria-hidden="true">
                         <use xlink:href="/images/sprite.svg#icon-email"></use>
@@ -99,8 +99,8 @@
                       </svg>
                     </div>
                     <div class="custom-input">
-                      <label for="phone" class="custom-input__label">Телефон*</label>
-                      <input class="custom-input__field" type="tel" name="phone" placeholder="+7 (XXX) XXX-XX-XX" aria-label="Номер телефона" required>
+                      <label class="custom-input__label" for="phone">Телефон*</label>
+                      <input class="custom-input__field" type="tel" name="phone" placeholder="+7 (XXX) XXX-XX-XX" id="phone" aria-label="Номер телефона" required>
                       <svg class="custom-input__field-icon" width="20" height="20" aria-hidden="true">
                         <use xlink:href="/images/sprite.svg#icon-call"></use>
                       </svg>
@@ -246,9 +246,9 @@
                 <legend class="form__group-name">Работал(а) ли ты раньше с Газпромбанком?</legend>
                 <div class="form__group-inner">
                       <div class="custom-input custom-input--flat">
-                        <input class="custom-input__radio" form="radio-yes" type="radio" value="Да" name="radio-yes" aria-label="Да" required>
-                        <label for="radio-yes" class="custom-input__radio-label">Да</label>
-                        <input class="custom-input__radio" type="radio" value="Нет" name="radio-no" aria-label="Да" required>
+                        <input class="custom-input__radio" type="radio" value="Да" id="radio-yes" name="radio-yes" aria-label="Да" required>
+                        <label class="custom-input__radio-label" for="radio-yes">Да</label>
+                        <input class="custom-input__radio" type="radio" value="Нет" name="radio-no" id="radio-no" aria-label="Да" required>
                         <label class="custom-input__radio-label" for="radio-no" >Нет</label>
                         <input class="custom-input__field" type="text"  name="name-person" placeholder="ФИО сотрудника" aria-label="ФИО сотрудника" required>
                       </div>
@@ -258,9 +258,9 @@
                 <legend class="form__group-name">Откуда узнал(а) о нас?</legend>
                 <div class="form__group-inner">
                       <div class="custom-input custom-input--flat">
-                        <input class="custom-input__radio" form="radio-event" type="radio" value="event" name="radio-event" aria-label="Мероприятие" required>
+                        <input class="custom-input__radio"  type="radio" value="event" name="radio-event" id="radio-event" aria-label="Мероприятие" required>
                         <label class="custom-input__radio-label" for="radio-event">Мероприятие</label>
-                        <input class="custom-input__radio" type="radio" value="specialist" name="radio-specialist" aria-label="Специалист" required>
+                        <input class="custom-input__radio" type="radio" value="specialist" name="radio-specialist" id="radio-specialist" aria-label="Специалист" required>
                         <label class="custom-input__radio-label" for="radio-specialist" >Специалист</label>
                         <input class="custom-input__field custom-input__field--specialist" type="text"  name="name-person" placeholder="Иван Иванов" aria-label="ФИО сотрудника" required>
                       </div>
