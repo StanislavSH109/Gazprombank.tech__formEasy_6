@@ -75,40 +75,48 @@
             <form action="#" class="form">
               <fieldset class="form__group">
                 <legend class="form__group-name">Расскажи о себе</legend>
-                <div class="custom-input__inner">
-                  <div class="custom-input__inner-left">
+                <div class="form__group-inner">
+                  <div class="form__group-inner-left">
                       <div class="custom-input">
                         <input class="custom-input__field" type="text" name="name" placeholder="Имя*" aria-label="Имя" required>
                         <input class="custom-input__field" type="text" name="surname" placeholder="Фамилия*" aria-label="Фамилия" required>
                         <input class="custom-input__field" type="text" name="second-surname" placeholder="Отчество*" aria-label="Отчество" required>
                       </div>
                   </div>
-                  <div class="custom-input__inner-right">
+                  <div class="form__group-inner-right">
                     <div class="custom-input">
                       <label for="email" class="custom-input__label">Почта*</label>
                       <input class="custom-input__field" type="email" name="email" placeholder="E-mail*" aria-label="email" required>
-                      
+                      <svg class="custom-input__field-icon" width="20" height="20" aria-hidden="true">
+                        <use xlink:href="/images/sprite.svg#icon-email"></use>
+                      </svg>
                     </div>
                     <div class="custom-input">
                       <label for="birthday" class="custom-input__label">Дата рождения*</label>
                       <input class="custom-input__field" type="date" name="birthday"  aria-label="Дата рождения" required>
+                      <svg class="custom-input__field-icon" width="20" height="20" aria-hidden="true"></svg>
+                        <use xlink:href="/images/sprite.svg#icon-calendar"></use>
+                      </svg>
                     </div>
                     <div class="custom-input">
                       <label for="phone" class="custom-input__label">Телефон*</label>
                       <input class="custom-input__field" type="phone" name="phone" placeholder="+7 (XXX) XXX-XX-XX" aria-label="Номер телефона" required>
+                      <svg class="custom-input__field-icon" width="20" height="20" aria-hidden="true"></svg>
+                        <use xlink:href="/images/sprite.svg#icon-call"></use>
+                      </svg>
                     </div>
                   </div>
                 </div>
               </fieldset>
               <fieldset class="form__group">
                 <legend class="form__group-name">Расскажи о компании</legend>
-                <div class="custom-input__inner">
+                <div class="form__group-inner">
                       <div class="custom-input">
                         <input class="custom-input__field" type="text" name="company-name" placeholder="Название компании*" aria-label="company name" required>
                         <input class="custom-input__field" type="text" name="site" placeholder="Сайт компании*" aria-label="Сайт компании" required>
 
                         <div class="custom-input  custom-input--flat">
-                          <input class="custom-input__field  custom-input--flat" type="text" name="company-description" placeholder="Описание компании*" aria-label="Описание компании" required>
+                          <input class="custom-input__field  custom-input__field--flat" type="text" name="company-description" placeholder="Описание компании*" aria-label="Описание компании" required>
                         </div>
                       </div>
                 </div>
@@ -116,9 +124,9 @@
               </fieldset>
               <fieldset class="form__group">
                 <legend class="form__group-name">Добавь ссылку на презентацию проекта</legend>
-                <div class="custom-input__inner">
+                <div class="form__group-inner">
                       <div class="custom-input custom-input--flat">
-                        <input class="custom-input__field custom-input--flat" type="url" name="company-link" placeholder="Ссылка*" aria-label="ссылка" required>
+                        <input class="custom-input__field custom-input__field--flat" type="url" name="company-link" placeholder="Ссылка*" aria-label="ссылка" required>
                       </div>
                   </div>
                 </fieldset>
@@ -240,7 +248,7 @@
               </fieldset>
               <fieldset class="form__group">
                 <legend class="form__group-name">Работал(а) ли ты раньше с Газпромбанком?</legend>
-                <div class="custom-input__inner">
+                <div class="form__group-inner">
                       <div class="custom-input custom-input--flat">
                         <input class="custom-input__radio" form="radio-yes" type="radio" value="Да" name="radio-yes" placeholder="Да" aria-label="Да" required>
                         <label for="radio-yes" class="custom-input__radio-label">Да</label>
@@ -252,7 +260,7 @@
                 </fieldset>
                 <fieldset class="form__group">
                   <legend class="form__group-name">Откуда узнал(а) о нас?</legend>
-                  <div class="custom-input__inner">
+                  <div class="form__group-inner">
                         <div class="custom-input custom-input--flat">
                           <input class="custom-input__radio" form="radio-event" type="radio" value="event" name="radio-event" aria-label="Мероприятие" required>
                           <label class="custom-input__radio-label" for="radio-event">Мероприятие</label>
@@ -264,7 +272,7 @@
                   </fieldset>
                   <fieldset class="form__group">
                     <div class="custom-input  custom-input--flat">
-                      <input class="custom-input__field  custom-input--flat" type="text" name="message-candidate" placeholder="Сообщение" aria-label="Сообщение" required>
+                      <input class="custom-input__field  custom-input__field--flat" type="text" name="message-candidate" placeholder="Сообщение" aria-label="Сообщение" required>
                     </div>
                 </fieldset>
                 <div class="form__personal-data">

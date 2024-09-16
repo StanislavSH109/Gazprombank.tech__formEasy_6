@@ -10,3 +10,32 @@
     color: #000000;
     margin: 0 0 60px 0;
 }
+
+.form-input__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .form-input__inner-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 10px 0 0 0;
+  }
+  
+  
+  .form-input__inner-right {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  
+  .form-input__inner-left .custom-input__field {
+    margin: 0 0 60px 0;
+  }
+  
+  .form-input__inner-right .custom-input__field{
+    margin: 0 0 42px 0;
+  }
+  
