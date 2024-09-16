@@ -85,23 +85,23 @@
                   </div>
                   <div class="form__group-inner-right">
                     <div class="custom-input">
-                      <label for="email" class="custom-input__label">Почта*</label>
-                      <input class="custom-input__field" type="email" name="email" placeholder="E-mail*" aria-label="email" required>
+                      <label class="custom-input__label" for="email" id="email">Почта*</label>
+                      <input class="custom-input__field" type="email" name="email" placeholder="E-mail*" id="email" aria-label="email" required>
                       <svg class="custom-input__field-icon" width="20" height="20" aria-hidden="true">
                         <use xlink:href="/images/sprite.svg#icon-email"></use>
                       </svg>
                     </div>
                     <div class="custom-input">
-                      <label for="birthday" class="custom-input__label">Дата рождения*</label>
-                      <input class="custom-input__field" type="date" name="birthday"  aria-label="Дата рождения" required>
-                      <svg class="custom-input__field-icon" width="20" height="20" aria-hidden="true"></svg>
+                      <label class="custom-input__label" for="birthday">Дата рождения*</label>
+                      <input class="custom-input__field" type="date" name="birthday" id="birthday" aria-label="Дата рождения" required>
+                      <svg class="custom-input__field-icon" width="20" height="20" aria-hidden="true">
                         <use xlink:href="/images/sprite.svg#icon-calendar"></use>
                       </svg>
                     </div>
                     <div class="custom-input">
                       <label for="phone" class="custom-input__label">Телефон*</label>
-                      <input class="custom-input__field" type="phone" name="phone" placeholder="+7 (XXX) XXX-XX-XX" aria-label="Номер телефона" required>
-                      <svg class="custom-input__field-icon" width="20" height="20" aria-hidden="true"></svg>
+                      <input class="custom-input__field" type="tel" name="phone" placeholder="+7 (XXX) XXX-XX-XX" aria-label="Номер телефона" required>
+                      <svg class="custom-input__field-icon" width="20" height="20" aria-hidden="true">
                         <use xlink:href="/images/sprite.svg#icon-call"></use>
                       </svg>
                     </div>
@@ -129,7 +129,7 @@
                         <input class="custom-input__field custom-input__field--flat" type="url" name="company-link" placeholder="Ссылка*" aria-label="ссылка" required>
                       </div>
                   </div>
-                </fieldset>
+              </fieldset>
               <fieldset class="form__group">
                 <legend class="form__group-name">
                   <svg>
@@ -138,151 +138,147 @@
                   Укажи направление работы твоего стартапа или проекта
                 </legend>
                 <div class="form__group-checkbox">
-                  <input type="checkbox" class="form__group-input-checkbox">
-                  <label for="" class="form__group-label">Сервисы для отделений</label>
+                  <input class="form__group-input-checkbox" type="checkbox" name="services" id="services">
+                  <label for="services" class="form__group-label">Сервисы для отделений</label>
                 </div>
                 <div class="form__group-checkbox">
-                  <input type="checkbox" class="form__group-input-checkbox">
-                  <label for="" class="form__group-label">Сервисы для отделений</label>
+                  <input class="form__group-input-checkbox" name="electronic-document" type="checkbox" id="electronic-document">
+                  <label class="form__group-label" for="electronic-document">Электронный документооборот</label>
                 </div>
                 <div class="form__group-checkbox">
-                  <input type="checkbox" class="form__group-input-checkbox">
-                  <label for="" class="form__group-label">Сервисы для отделений</label>
+                  <input class="form__group-input-checkbox" name="spech-tech" type="checkbox" id="spech-tech">
+                  <label class="form__group-label" for="spech-tech">Речевые технологии</label>
                 </div>
                 <div class="form__group-checkbox">
-                  <input type="checkbox" class="form__group-input-checkbox">
-                  <label for="" class="form__group-label">Сервисы для отделений</label>
+                  <input class="form__group-input-checkbox" name="clients-chanel" type="checkbox" id="clients-chanel">
+                  <label class="form__group-label" for="clients-chanel">Каналы взаимодействия с клиентами</label>
                 </div>
                 <div class="form__group-checkbox">
-                  <input type="checkbox" class="form__group-input-checkbox">
-                  <label for="" class="form__group-label">Сервисы для отделений</label>
+                  <input class="form__group-input-checkbox" name="id-bio" type="checkbox" id="id-bio">
+                  <label class="form__group-label" for="id-bio">Идентификация и биометрия</label>
                 </div>
                 <div class="form__group-checkbox">
-                  <input type="checkbox" class="form__group-input-checkbox">
-                  <label for="" class="form__group-label">Сервисы для отделений</label>
+                  <input class="form__group-input-checkbox" name="invest-services" type="checkbox" id="invest-services">
+                  <label class="form__group-label" for="invest-services">Сервисы для инвестиций и работы с инвест.портфелем</label>
                 </div>
                 <div class="form__group-checkbox">
-                  <input type="checkbox" class="form__group-input-checkbox">
-                  <label for="" class="form__group-label">Сервисы для отделений</label>
+                  <input class="form__group-input-checkbox" name="mortgage" type="checkbox" id="mortgage">
+                  <label class="form__group-label" for="mortgage">Ипотека</label>
                 </div>
                 <div class="form__group-checkbox">
-                  <input type="checkbox" class="form__group-input-checkbox">
-                  <label for="" class="form__group-label">Сервисы для отделений</label>
+                  <input class="form__group-input-checkbox" name="frod" type="checkbox" id="frod">
+                  <label class="form__group-label" for="frod">Антифрод и безопасность</label>
                 </div>
                 <div class="form__group-checkbox">
-                  <input type="checkbox" class="form__group-input-checkbox">
-                  <label for="" class="form__group-label">Сервисы для отделений</label>
+                  <input class="form__group-input-checkbox" name="score-cybersecurity" type="checkbox" id="score-cybersecurity">
+                  <label class="form__group-label" for="score-cybersecurity">Скоринг и кибербезопасность</label>
                 </div>
                 <div class="form__group-checkbox">
-                  <input type="checkbox" class="form__group-input-checkbox">
-                  <label for="" class="form__group-label">Сервисы для отделений</label>
+                  <input class="form__group-input-checkbox" name="hrtech" type="checkbox" id="hrtech">
+                  <label class="form__group-label" for="hrtech">HrTech</label>
                 </div>
                 <div class="form__group-checkbox">
-                  <input type="checkbox" class="form__group-input-checkbox">
-                  <label for="" class="form__group-label">Сервисы для отделений</label>
+                  <input class="form__group-input-checkbox" name="edtech" type="checkbox" id="edtech">
+                  <label class="form__group-label" for="edtech">EdTech</label>
                 </div>
                 <div class="form__group-checkbox">
-                  <input type="checkbox" class="form__group-input-checkbox">
-                  <label for="" class="form__group-label">Сервисы для отделений</label>
+                  <input class="form__group-input-checkbox" name="credits" type="checkbox" id="credits">
+                  <label class="form__group-label" for="credits">Кредитование</label>
                 </div>
                 <div class="form__group-checkbox">
-                  <input type="checkbox" class="form__group-input-checkbox">
-                  <label for="" class="form__group-label">Сервисы для отделений</label>
+                  <input class="form__group-input-checkbox" name="autocredits" type="checkbox" id="autocredits">
+                  <label class="form__group-label" for="autocredits">Автокредитование</label>
                 </div>
                 <div class="form__group-checkbox">
-                  <input type="checkbox" class="form__group-input-checkbox">
-                  <label for="" class="form__group-label">Сервисы для отделений</label>
+                  <input class="form__group-input-checkbox" name="insurance" type="checkbox" id="insurance">
+                  <label class="form__group-label" for="insurance">Страхование</label>
                 </div>
                 <div class="form__group-checkbox">
-                  <input type="checkbox" class="form__group-input-checkbox">
-                  <label for="" class="form__group-label">Сервисы для отделений</label>
+                  <input class="form__group-input-checkbox" name="customer-data" type="checkbox" id="customer-data">
+                  <label class="form__group-label" for="customer-data">Обогащение данных о клиентах</label>
                 </div>
                 <div class="form__group-checkbox">
-                  <input type="checkbox" class="form__group-input-checkbox">
-                  <label for="" class="form__group-label">Сервисы для отделений</label>
+                  <input class="form__group-input-checkbox" name="crm" type="checkbox" id="crm">
+                  <label class="form__group-label" for="crm">CRM</label>
                 </div>
                 <div class="form__group-checkbox">
-                  <input type="checkbox" class="form__group-input-checkbox">
-                  <label for="" class="form__group-label">Сервисы для отделений</label>
+                  <input class="form__group-input-checkbox" name="services-for-business" type="checkbox" id="services-for-business">
+                  <label class="form__group-label" for="services-for-business">Сервисы для малого и среднего бизнеса</label>
                 </div>
                 <div class="form__group-checkbox">
-                  <input type="checkbox" class="form__group-input-checkbox">
-                  <label for="" class="form__group-label">Сервисы для отделений</label>
+                  <input class="form__group-input-checkbox" name="pfm" type="checkbox" id="pfm">
+                  <label class="form__group-label" for="pfm">PFM</label>
                 </div>
                 <div class="form__group-checkbox">
-                  <input type="checkbox" class="form__group-input-checkbox">
-                  <label for="" class="form__group-label">Сервисы для отделений</label>
+                  <input class="form__group-input-checkbox" name="company-address" type="checkbox" id="company-address">
+                  <label class="form__group-label" for="company-address">Юридический адрес</label>
                 </div>
                 <div class="form__group-checkbox">
-                  <input type="checkbox" class="form__group-input-checkbox">
-                  <label for="" class="form__group-label">Сервисы для отделений</label>
+                  <input class="form__group-input-checkbox" name="neobank" type="checkbox" id="neobank">
+                  <label class="form__group-label" for="neobank">Необанкинг</label>
                 </div>
                 <div class="form__group-checkbox">
-                  <input type="checkbox" class="form__group-input-checkbox">
-                  <label for="" class="form__group-label">Сервисы для отделений</label>
+                  <input class="form__group-input-checkbox" name="digital-marketing" type="checkbox" id="digital-marketing">
+                  <label class="form__group-label" for="digital-marketing">Digital Marketing</label>
                 </div>
                 <div class="form__group-checkbox">
-                  <input type="checkbox" class="form__group-input-checkbox">
-                  <label for="" class="form__group-label">Сервисы для отделений</label>
+                  <input class="form__group-input-checkbox" name="services-work-with-clients" type="checkbox" id="services-work-with-clients">
+                  <label class="form__group-label" for="services-work-with-clients">Сервисы по работе с оттоком клиентов</label>
                 </div>
                 <div class="form__group-checkbox">
-                  <input type="checkbox" class="form__group-input-checkbox">
-                  <label for="" class="form__group-label">Сервисы для отделений</label>
+                  <input class="form__group-input-checkbox" name="attraction-clients" type="checkbox" id="attraction-clients">
+                  <label class="form__group-label" for="attraction-clients">Привлечение новых клиентов</label>
                 </div>
                 <div class="form__group-checkbox">
-                  <input type="checkbox" class="form__group-input-checkbox">
-                  <label for="" class="form__group-label">Сервисы для отделений</label>
+                  <input class="form__group-input-checkbox" name="helpdesk" type="checkbox" id="helpdesk">
+                  <label class="form__group-label" for="helpdesk">Helpdesk</label>
                 </div>
                 <div class="form__group-checkbox">
-                  <input type="checkbox" class="form__group-input-checkbox">
-                  <label for="" class="form__group-label">Сервисы для отделений</label>
+                  <input class="form__group-input-checkbox" name="company-study" type="checkbox" id="company-study">
+                  <label class="form__group-label" for="company-study">Корпоративное обучение</label>
                 </div>
                 <div class="form__group-checkbox">
-                  <input type="checkbox" class="form__group-input-checkbox">
-                  <label for="" class="form__group-label">Сервисы для отделений</label>
-                </div>
-                <div class="form__group-checkbox">
-                  <input type="checkbox" class="form__group-input-checkbox">
-                  <label for="" class="form__group-label">Сервисы для отделений</label>
+                  <input class="form__group-input-checkbox" name="hiring" type="checkbox" id="hiring">
+                  <label class="form__group-label" for="hiring">Найм</label>
                 </div>
               </fieldset>
               <fieldset class="form__group">
                 <legend class="form__group-name">Работал(а) ли ты раньше с Газпромбанком?</legend>
                 <div class="form__group-inner">
                       <div class="custom-input custom-input--flat">
-                        <input class="custom-input__radio" form="radio-yes" type="radio" value="Да" name="radio-yes" placeholder="Да" aria-label="Да" required>
+                        <input class="custom-input__radio" form="radio-yes" type="radio" value="Да" name="radio-yes" aria-label="Да" required>
                         <label for="radio-yes" class="custom-input__radio-label">Да</label>
-                        <input class="custom-input__radio" type="radio" value="Нет" name="radio-no" placeholder="Нет" aria-label="Да" required>
+                        <input class="custom-input__radio" type="radio" value="Нет" name="radio-no" aria-label="Да" required>
                         <label class="custom-input__radio-label" for="radio-no" >Нет</label>
                         <input class="custom-input__field" type="text"  name="name-person" placeholder="ФИО сотрудника" aria-label="ФИО сотрудника" required>
                       </div>
                   </div>
-                </fieldset>
-                <fieldset class="form__group">
-                  <legend class="form__group-name">Откуда узнал(а) о нас?</legend>
-                  <div class="form__group-inner">
-                        <div class="custom-input custom-input--flat">
-                          <input class="custom-input__radio" form="radio-event" type="radio" value="event" name="radio-event" aria-label="Мероприятие" required>
-                          <label class="custom-input__radio-label" for="radio-event">Мероприятие</label>
-                          <input class="custom-input__radio" type="radio" value="specialist" name="radio-specialist" aria-label="Специалист" required>
-                          <label class="custom-input__radio-label" for="radio-specialist" >Специалист</label>
-                          <input class="custom-input__field custom-input__field--specialist" type="text"  name="name-person" placeholder="Иван Иванов" aria-label="ФИО сотрудника" required>
-                        </div>
-                    </div>
-                  </fieldset>
-                  <fieldset class="form__group">
-                    <div class="custom-input  custom-input--flat">
-                      <input class="custom-input__field  custom-input__field--flat" type="text" name="message-candidate" placeholder="Сообщение" aria-label="Сообщение" required>
-                    </div>
-                </fieldset>
-                <div class="form__personal-data">
-                  <input class="form__personal-data-label" type="checkbox" name="" id="">
-                  <label class="form__personal-data-label" for="">Даю согласие на обработку персональных данных</label>
-                </div>
-                <svg>
-                  <use xlink:href="/images/sprite.svg#icon-arrow"></use>
-                </svg>
-                <button class="form__button-submit" type="submit">Отправить</button>
+              </fieldset>
+              <fieldset class="form__group">
+                <legend class="form__group-name">Откуда узнал(а) о нас?</legend>
+                <div class="form__group-inner">
+                      <div class="custom-input custom-input--flat">
+                        <input class="custom-input__radio" form="radio-event" type="radio" value="event" name="radio-event" aria-label="Мероприятие" required>
+                        <label class="custom-input__radio-label" for="radio-event">Мероприятие</label>
+                        <input class="custom-input__radio" type="radio" value="specialist" name="radio-specialist" aria-label="Специалист" required>
+                        <label class="custom-input__radio-label" for="radio-specialist" >Специалист</label>
+                        <input class="custom-input__field custom-input__field--specialist" type="text"  name="name-person" placeholder="Иван Иванов" aria-label="ФИО сотрудника" required>
+                      </div>
+                  </div>
+              </fieldset>
+              <fieldset class="form__group">
+                  <div class="custom-input  custom-input--flat">
+                    <input class="custom-input__field  custom-input__field--flat" type="text" name="message-candidate" placeholder="Сообщение" aria-label="Сообщение" required>
+                  </div>
+              </fieldset>
+              <div class="form__personal-data">
+                <input class="form__personal-data-label" type="checkbox" name="agree" id="agree">
+                <label class="form__personal-data-label" for="agree">Даю согласие на обработку персональных данных</label>
+              </div>
+              <svg>
+                <use xlink:href="/images/sprite.svg#icon-arrow"></use>
+              </svg>
+              <button class="form__button-submit" type="submit">Отправить</button>
             </form>
           </div>
         </div>
