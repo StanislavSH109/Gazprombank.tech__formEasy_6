@@ -26,6 +26,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  padding: 10px 0 0 0;
 }
 
 
@@ -37,6 +38,10 @@
 
 .custom-input__inner-left .custom-input__field {
   margin: 0 0 60px 0;
+}
+
+.custom-input__inner-right .custom-input__field{
+  margin: 0 0 42px 0;
 }
 
 .custom-input__label {
