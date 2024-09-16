@@ -19,10 +19,10 @@
 .custom-input__field-icon {
   width: 20px;
   height: 20px;
-  color: black;
+  position: absolute;
+  right: 0;
+  transform: translateY(50%);
 }
-
-
 
 .custom-input__label {
   font-size: 12px;
