@@ -85,25 +85,31 @@
                   </div>
                   <div class="form__group-inner-right">
                     <div class="custom-input">
-                      <label class="custom-input__label" for="email">Почта*</label>
-                      <input class="custom-input__field" type="email" name="email" placeholder="E-mail*" id="email" aria-label="email" required>
-                      <svg class="custom-input__field-icon" width="20" height="20" aria-hidden="true">
-                        <use xlink:href="/images/sprite.svg#icon-email"></use>
-                      </svg>
+                      <div class="custom-input__wrapper">
+                        <label class="custom-input__label" for="email">Почта*</label>
+                        <input class="custom-input__field" type="email" name="email" placeholder="E-mail*" id="email" aria-label="email" required>
+                        <svg class="custom-input__field-icon" width="20" height="20" aria-hidden="true">
+                          <use xlink:href="/images/sprite.svg#icon-email"></use>
+                        </svg>
+                      </div>
                     </div>
                     <div class="custom-input">
-                      <label class="custom-input__label" for="birthday">Дата рождения*</label>
-                      <input class="custom-input__field" type="date" name="birthday" id="birthday" aria-label="Дата рождения" required>
-                      <svg class="custom-input__field-icon" width="20" height="20" aria-hidden="true">
-                        <use xlink:href="/images/sprite.svg#icon-calendar"></use>
-                      </svg>
+                      <div class="custom-input__wrapper">
+                        <label class="custom-input__label" for="birthday">Дата рождения*</label>
+                        <input class="custom-input__field" type="date" name="birthday" id="birthday" aria-label="Дата рождения" required>
+                        <svg class="custom-input__field-icon" width="20" height="20" aria-hidden="true">
+                          <use xlink:href="/images/sprite.svg#icon-calendar"></use>
+                        </svg>
+                      </div>
                     </div>
                     <div class="custom-input">
-                      <label class="custom-input__label" for="phone">Телефон*</label>
-                      <input class="custom-input__field" type="tel" name="phone" placeholder="+7 (XXX) XXX-XX-XX" id="phone" aria-label="Номер телефона" required>
-                      <svg class="custom-input__field-icon" width="20" height="20" aria-hidden="true">
-                        <use xlink:href="/images/sprite.svg#icon-call"></use>
-                      </svg>
+                      <div class="custom-input__wrapper">
+                        <label class="custom-input__label" for="phone">Телефон*</label>
+                        <input class="custom-input__field" type="tel" name="phone" placeholder="+7 (XXX) XXX-XX-XX" id="phone" aria-label="Номер телефона" required>
+                        <svg class="custom-input__field-icon" width="20" height="20" aria-hidden="true">
+                          <use xlink:href="/images/sprite.svg#icon-call"></use>
+                        </svg>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -111,16 +117,20 @@
               <fieldset class="form__group">
                 <legend class="form__group-name">Расскажи о компании</legend>
                 <div class="form__group-inner">
+                    <div class="form__group-inner-left">
                       <div class="custom-input">
                         <input class="custom-input__field" type="text" name="company-name" placeholder="Название компании*" aria-label="company name" required>
+                      </div>
+                    </div>
+                    <div class="form__group-inner-right">
+                      <div class="custom-input">
                         <input class="custom-input__field" type="text" name="site" placeholder="Сайт компании*" aria-label="Сайт компании" required>
-
+                      </div>
+                    </div>
                         <div class="custom-input  custom-input--flat">
                           <input class="custom-input__field  custom-input__field--flat" type="text" name="company-description" placeholder="Описание компании*" aria-label="Описание компании" required>
                         </div>
-                      </div>
-                </div>
-
+                  </div>
               </fieldset>
               <fieldset class="form__group">
                 <legend class="form__group-name">Добавь ссылку на презентацию проекта</legend>
@@ -131,10 +141,10 @@
                   </div>
               </fieldset>
               <fieldset class="form__group">
-                <legend class="form__group-name">
-                  <svg>
-                    <use xlink:href="/images/sprite.svg#icon-info" width="20" height="20"></use>
-                  </svg>
+                <svg class="form__group-name-icon">
+                  <use xlink:href="/images/sprite.svg#icon-info" width="20" height="20"></use>
+                </svg>
+                <legend class="form__group-name form__group-name--wrap">
                   Укажи направление работы твоего стартапа или проекта
                 </legend>
                 <div class="form__group-checkbox">

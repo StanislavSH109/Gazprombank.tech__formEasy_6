@@ -1,8 +1,15 @@
 .custom-input {
-  position: relative;
   display: flex;
   flex-direction: column;
+  position: relative;
+  gap: 50px;
 }
+
+.custom-input--about {
+  display: flex;
+  flex-direction: row;
+}
+
 
 .custom-input__field {
   outline: none;
@@ -12,7 +19,7 @@
   font-size: 18px;
   line-height: 1.2;
   border-bottom: 1px solid #CACACA;
-  width: 560px;
+  width: 100%;
   font-weight: 400;
 }
 
@@ -35,8 +42,11 @@
   color: #9B9B9B;
 }
 
-
-
 .custom-input--flat {
+  width: 100%;
+  grid-column: span 2;
+}
+
+.custom-input__field--flat {
   width: 100%;
 }
