@@ -60,6 +60,10 @@
     clip-path: inset(100%);
 }
 
+.form__group-input-checkbox:checked {
+    
+}
+
 .form__group-label {
     position: relative;
     padding: 0 0 0 30px;
@@ -67,7 +71,7 @@
 }
 
 .form__group-label::before {
-    content: "2";
+    content: "";
     position: absolute;
     width: 20px;
     height: 20px;
@@ -76,6 +80,10 @@
     top: 50%;
     left: 0;
     transform: translateY(-50%);
+}
+
+.form__group-label::after {
+    content: "";
 }
 
 .form__group--radio {
