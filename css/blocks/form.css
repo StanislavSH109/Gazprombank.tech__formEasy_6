@@ -1,3 +1,9 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
 .form__group {
     position: relative;
     border: none;
@@ -64,4 +70,31 @@
 
 .form__group--message {
     margin: 0 0 60px 0;
+}
+
+.form__personal-data {
+    display: flex;
+    align-items: center;
+}
+
+.form__personal-data-agree {
+    display: flex;
+    gap: 20px;
+}
+
+.form__button-submit {
+    display: flex;
+    text-align: center;
+    width: 160px;
+    border: 1px solid rgba(25, 25, 239, 0.4);
+    border-radius: 60px;
+    padding: 11px 36px;
+    background-color: #ffffff;
+    color: rgba(25, 25, 239, 0.4);
+}
+
+.form__group-icon-arrow {
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }

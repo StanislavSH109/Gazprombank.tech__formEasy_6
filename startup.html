@@ -287,11 +287,11 @@
                 <legend class="form__group-name">Откуда узнал(а) о нас?</legend>
                 <div class="form__group-inner-radio">
                       <div class="custom-input custom-input--checkbox">
-                        <div class="custom-input__wrapper">
+                        <div class="custom-input__wrapper custom-input__wrapper--checkbox">
                           <input class="custom-input__radio"  type="radio" value="event" name="radio-event" id="radio-event" aria-label="Мероприятие" required>
                           <label class="custom-input__radio-label" for="radio-event">Мероприятие</label>
                         </div>
-                        <div class="custom-input__wrapper">
+                        <div class="custom-input__wrapper custom-input__wrapper--checkbox">
                           <input class="custom-input__radio" type="radio" value="specialist" name="radio-specialist" id="radio-specialist" aria-label="Специалист" required>
                           <label class="custom-input__radio-label" for="radio-specialist" >Специалист</label>
                         </div>
@@ -305,13 +305,15 @@
                   </div>
               </fieldset>
               <div class="form__personal-data">
-                <input class="form__personal-data-label" type="checkbox" name="agree" id="agree">
-                <label class="form__personal-data-label" for="agree">Даю согласие на обработку персональных данных</label>
+                <div class="form__personal-data-agree">
+                  <input class="form__personal-data-label" type="checkbox" name="agree" id="agree">
+                  <label class="form__personal-data-label" for="agree">Даю согласие на обработку персональных данных</label>
+                </div>
+                <button class="form__button-submit" type="submit">Отправить</button>
               </div>
-              <svg>
+              <svg class="form__group-icon-arrow" width="60" height="60">
                 <use xlink:href="/images/sprite.svg#icon-arrow"></use>
               </svg>
-              <button class="form__button-submit" type="submit">Отправить</button>
             </form>
           </div>
         </div>
