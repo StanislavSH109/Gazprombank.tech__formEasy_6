@@ -14,14 +14,11 @@
 
 .form__group-inner {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, auto);
     gap: 80px;
     width: 100%;
     margin: 0 0 60px 0;
-  }
-
-  .form__group-inner-right {
-    grid-row: span 1;
+    height: 100%; 
   }
 
 .form__group-name-icon {
