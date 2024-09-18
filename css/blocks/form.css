@@ -159,8 +159,18 @@
     left: 0;
     transform: translate(-50%, -50%);
 }
-
+ 
 .form__personal-icon-checked {
+  display: none; 
+
+} 
+
+.form__personal-data-input:checked + .form__personal-data-label .form__personal-icon-checked {
+    display: block;
     width: 10px;
-    height: 7px;
+    height: 10px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%, -50%);
 }
