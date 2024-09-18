@@ -60,6 +60,24 @@
     clip-path: inset(100%);
 }
 
+.form__group-label {
+    position: relative;
+    padding: 0 0 0 30px;
+    cursor: pointer;
+}
+
+.form__group-label::before {
+    content: "2";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 1px solid rgba(172, 181, 189, 1);
+    border-radius: 4px;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
 .form__group--radio {
     width: 50%;
     margin: 0 0 40px 0;
