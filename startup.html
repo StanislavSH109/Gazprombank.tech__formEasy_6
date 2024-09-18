@@ -269,7 +269,7 @@
               </fieldset>
               <fieldset class="form__group  form__group--radio">
                 <legend class="form__group-name">Работал(а) ли ты раньше с Газпромбанком?</legend>
-                <div class="form__group-inner">
+                <div class="form__group-inner-radio">
                       <div class="custom-input custom-input--checkbox">
                         <div class="custom-input__wrapper custom-input__wrapper--checkbox">
                           <input class="custom-input__radio" type="radio" value="Да" id="radio-yes" name="radio-yes" aria-label="Да" required>
@@ -279,25 +279,29 @@
                           <input class="custom-input__radio" type="radio" value="Нет" name="radio-no" id="radio-no" aria-label="Да" required>
                           <label class="custom-input__radio-label" for="radio-no" >Нет</label>
                         </div>
-                        <input class="custom-input__field" type="text"  name="name-person" placeholder="ФИО сотрудника" aria-label="ФИО сотрудника" required>
+                        <input class="custom-input__field custom-input__field--radio" type="text"  name="name-person" placeholder="ФИО сотрудника" aria-label="ФИО сотрудника" required>
                       </div>
                   </div>
               </fieldset>
-              <fieldset class="form__group">
+              <fieldset class="form__group form__group--radio-from">
                 <legend class="form__group-name">Откуда узнал(а) о нас?</legend>
-                <div class="form__group-inner">
-                      <div class="custom-input custom-input--flat">
-                        <input class="custom-input__radio"  type="radio" value="event" name="radio-event" id="radio-event" aria-label="Мероприятие" required>
-                        <label class="custom-input__radio-label" for="radio-event">Мероприятие</label>
-                        <input class="custom-input__radio" type="radio" value="specialist" name="radio-specialist" id="radio-specialist" aria-label="Специалист" required>
-                        <label class="custom-input__radio-label" for="radio-specialist" >Специалист</label>
+                <div class="form__group-inner-radio">
+                      <div class="custom-input custom-input--checkbox">
+                        <div class="custom-input__wrapper">
+                          <input class="custom-input__radio"  type="radio" value="event" name="radio-event" id="radio-event" aria-label="Мероприятие" required>
+                          <label class="custom-input__radio-label" for="radio-event">Мероприятие</label>
+                        </div>
+                        <div class="custom-input__wrapper">
+                          <input class="custom-input__radio" type="radio" value="specialist" name="radio-specialist" id="radio-specialist" aria-label="Специалист" required>
+                          <label class="custom-input__radio-label" for="radio-specialist" >Специалист</label>
+                        </div>
                         <input class="custom-input__field custom-input__field--specialist" type="text"  name="name-person" placeholder="Иван Иванов" aria-label="ФИО сотрудника" required>
                       </div>
-                  </div>
+                    </div>
               </fieldset>
-              <fieldset class="form__group">
+              <fieldset class="form__group form__group--message">
                   <div class="custom-input  custom-input--flat">
-                    <input class="custom-input__field  custom-input__field--flat" type="text" name="message-candidate" placeholder="Сообщение" aria-label="Сообщение" required>
+                    <input class="custom-input__field  custom-input__field--flat" id="message-candidate" placeholder="Сообщение" type="text" name="message-candidate"  aria-label="Сообщение" required>
                   </div>
               </fieldset>
               <div class="form__personal-data">

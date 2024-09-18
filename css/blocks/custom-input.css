@@ -53,9 +53,14 @@
 .custom-input--checkbox {
   display: flex;
   gap: 30px;
+  width: 100%;
 }
 
 .custom-input__wrapper--checkbox {
   display: flex;
   gap: 20px;
+}
+
+.custom-input__field--radio {
+  width: 100%;
 }

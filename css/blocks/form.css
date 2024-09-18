@@ -55,4 +55,13 @@
 
 .form__group--radio {
     width: 50%;
+    margin: 0 0 40px 0;
+}
+
+.form__group--radio-from {
+    margin: 0 0 40px 0;
+}
+
+.form__group--message {
+    margin: 0 0 60px 0;
 }
