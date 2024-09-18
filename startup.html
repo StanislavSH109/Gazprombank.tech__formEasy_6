@@ -103,7 +103,7 @@
                       <div class="custom-input">
                         <div class="custom-input__wrapper">
                           <label class="custom-input__label" for="birthday">Дата рождения*</label>
-                          <input class="custom-input__field" type="date" name="birthday" id="birthday" aria-label="Дата рождения" required>
+                          <input class="custom-input__field" type="text" name="birthday" id="birthday" aria-label="Дата рождения" placeholder="dd/mm/yyyy" required>
                           <svg class="custom-input__field-icon" width="20" height="20" aria-hidden="true">
                             <use xlink:href="/images/sprite.svg#icon-calendar"></use>
                           </svg>
@@ -358,8 +358,13 @@
               </fieldset>
               <div class="form__personal-data">
                 <div class="form__personal-data-agree">
-                  <input class="form__personal-data-label" type="checkbox" name="agree" id="agree">
-                  <label class="form__personal-data-label" for="agree">Даю согласие на обработку персональных данных</label>
+                  <input class="form__personal-data-input" type="checkbox" name="agree" id="agree">
+                  <label class="form__personal-data-label" for="agree">
+                    <span class="form__personal-data-text">Даю согласие на обработку персональных данных</span>
+                    <svg class="form__personal-icon-checked" width="10" height="7">
+                      <use xlink:href="/images/sprite.svg#icon-checked"></use>
+                    </svg>
+                  </label>
                 </div>
               </div>
               <div class="form__button">
