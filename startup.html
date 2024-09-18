@@ -79,34 +79,27 @@
                   <!-- <div class="form__group-inner-left"> -->
                       <div class="custom-input">
                         <div class="custom-input__wrapper">
-                          <label class="custom-input__label" for="name" ></label>
-                          <input class="custom-input__field" type="text" id="name" name="name" placeholder="Имя*" aria-label="Имя" required>
+                          <label class="custom-input__label" for="surname" ></label>
+                          <input class="custom-input__field" type="text" name="surname" id="surname" placeholder="Фамилия*" aria-label="Фамилия" required>
                         </div>
                       </div>  
                         <div class="custom-input">
                           <div class="custom-input__wrapper">
                             <label class="custom-input__label" for="email">Почта*</label>
-                          <input class="custom-input__field" type="email" name="email" placeholder="E-mail*" id="email" aria-label="email" required>
+                            <input class="custom-input__field" type="email" name="email" placeholder="E-mail*" id="email" aria-label="email" required>
+                            <svg class="custom-input__field-icon" width="20" height="20" aria-hidden="true">
+                              <use xlink:href="/images/sprite.svg#icon-email"></use>
+                            </svg>
                           </div>
                         </div>
                           <div class="custom-input">
                             <div class="custom-input__wrapper">
-                              <label class="custom-input__label" for="surname" ></label>
-                              <input class="custom-input__field" type="text" id="second-surname" name="second-surname" placeholder="Отчество*" aria-label="Отчество" required>
+                              <label class="custom-input__label" for="name" ></label>
+                              <input class="custom-input__field" type="text" id="name" name="name" placeholder="Имя*" aria-label="Имя" required>
                             </div>
                           </div>
                   <!-- </div> -->
                   <!-- <div class="form__group-inner-right"> -->
-                      <div class="custom-input">
-                        <div class="custom-input__wrapper">
-                          <label class="custom-input__label" for="surname" ></label>
-                          <input class="custom-input__field" type="text" name="surname" id="surname" placeholder="Фамилия*" aria-label="Фамилия" required>
-                          
-                          <svg class="custom-input__field-icon" width="20" height="20" aria-hidden="true">
-                            <use xlink:href="/images/sprite.svg#icon-email"></use>
-                          </svg>
-                        </div>
-                      </div>
                       <div class="custom-input">
                         <div class="custom-input__wrapper">
                           <label class="custom-input__label" for="birthday">Дата рождения*</label>
@@ -114,6 +107,12 @@
                           <svg class="custom-input__field-icon" width="20" height="20" aria-hidden="true">
                             <use xlink:href="/images/sprite.svg#icon-calendar"></use>
                           </svg>
+                        </div>
+                      </div>
+                      <div class="custom-input">
+                        <div class="custom-input__wrapper">
+                          <label class="custom-input__label" for="surname" ></label>
+                              <input class="custom-input__field" type="text" id="second-surname" name="second-surname" placeholder="Отчество*" aria-label="Отчество" required>
                         </div>
                       </div>
                       <div class="custom-input">
@@ -268,14 +267,18 @@
                   </div>
                 </div>
               </fieldset>
-              <fieldset class="form__group">
+              <fieldset class="form__group  form__group--radio">
                 <legend class="form__group-name">Работал(а) ли ты раньше с Газпромбанком?</legend>
                 <div class="form__group-inner">
-                      <div class="custom-input custom-input--flat">
-                        <input class="custom-input__radio" type="radio" value="Да" id="radio-yes" name="radio-yes" aria-label="Да" required>
-                        <label class="custom-input__radio-label" for="radio-yes">Да</label>
-                        <input class="custom-input__radio" type="radio" value="Нет" name="radio-no" id="radio-no" aria-label="Да" required>
-                        <label class="custom-input__radio-label" for="radio-no" >Нет</label>
+                      <div class="custom-input custom-input--checkbox">
+                        <div class="custom-input__wrapper custom-input__wrapper--checkbox">
+                          <input class="custom-input__radio" type="radio" value="Да" id="radio-yes" name="radio-yes" aria-label="Да" required>
+                          <label class="custom-input__radio-label" for="radio-yes">Да</label>
+                        </div>
+                        <div class="custom-input__wrapper custom-input__wrapper--checkbox">
+                          <input class="custom-input__radio" type="radio" value="Нет" name="radio-no" id="radio-no" aria-label="Да" required>
+                          <label class="custom-input__radio-label" for="radio-no" >Нет</label>
+                        </div>
                         <input class="custom-input__field" type="text"  name="name-person" placeholder="ФИО сотрудника" aria-label="ФИО сотрудника" required>
                       </div>
                   </div>

@@ -49,3 +49,13 @@
 .custom-input__field--flat {
   width: 100%;
 }
+
+.custom-input--checkbox {
+  display: flex;
+  gap: 30px;
+}
+
+.custom-input__wrapper--checkbox {
+  display: flex;
+  gap: 20px;
+}
