@@ -127,11 +127,15 @@
     cursor: pointer;
 }
 
-.form__group-icon-arrow {
+.form-arrow {
+    cursor: pointer;
     position: absolute;
     right: 0;
     bottom: 50px;
-    cursor: pointer;
+}
+
+.form-arrow__group-icon {
+   
 }
 
 .form__personal-data-input {

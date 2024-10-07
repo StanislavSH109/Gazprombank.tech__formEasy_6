@@ -154,12 +154,12 @@
                   </div>
               </fieldset>
               <fieldset class="form__group">
-                <svg class="form__group-name-icon">
-                  <use xlink:href="/images/sprite.svg#icon-info" width="20" height="20"></use>
-                </svg>
                 <legend class="form__group-name form__group-name--wrap">
                   Укажи направление работы твоего стартапа или проекта
                 </legend>
+                <svg class="form__group-name-icon">
+                  <use xlink:href="/images/sprite.svg#icon-info" width="20" height="20"></use>
+                </svg>
                 <div class="form__group-checkbox-wrapper">
                   <div class="form__group-checkbox">
                     <input class="form__group-input-checkbox" type="checkbox" name="services" id="services">
@@ -351,11 +351,9 @@
                       </div>
                     </div>
               </fieldset>
-              <fieldset class="form__group form__group--message">
-                  <div class="custom-input  custom-input--flat">
-                    <input class="custom-input__field  custom-input__field--flat" id="message-candidate" placeholder="Сообщение" type="text" name="message-candidate"  aria-label="Сообщение" required>
-                  </div>
-              </fieldset>
+              <div class="custom-input  custom-input--flat">
+                <textarea class="custom-input__field  custom-input__field--flat" id="message-candidate" placeholder="Сообщение" name="message-candidate"  aria-label="Сообщение" required></textarea>
+              </div>
               <div class="form__personal-data">
                 <div class="form__personal-data-agree">
                   <input class="form__personal-data-input" type="checkbox" name="agree" id="agree">
@@ -367,13 +365,14 @@
                   </label>
                 </div>
               </div>
-              <div class="form__button">
-                <button class="form__button-submit" type="submit">Отправить</button>
-              </div>
-              <svg class="form__group-icon-arrow" width="60" height="60">
+              <button class="form__button-submit" type="submit">Отправить</button>
+              
+            </form>
+            <button class="form-arrow">
+              <svg class="form-arrow__group-icon-arrow" width="60" height="60">
                 <use xlink:href="/images/sprite.svg#icon-arrow"></use>
               </svg>
-            </form>
+          </button>
           </div>
         </div>
       </section>
