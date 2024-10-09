@@ -137,12 +137,9 @@
     width: 166px;
 }
 
-.form-arrow {
+.form__arrow {
     display: flex;
-    justify-content: center;
-    bottom: 0;
-    position: sticky;
-    width: 60px;
+    justify-content: flex-end;
 }
 
 .form__arrow-button {
