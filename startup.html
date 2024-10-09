@@ -76,54 +76,39 @@
               <fieldset class="form__group">
                 <legend class="form__group-name">Расскажи о себе</legend>
                 <div class="form__group-inner">
-                      <div class="custom-input">
-                        
-                          <label class="custom-input__label" for="surname" ></label>
-                          <input class="custom-input__field" type="text" name="surname" id="surname" placeholder="Фамилия*" aria-label="Фамилия" required>
-                        
-                      </div>  
+                    <div class="custom-input">
+                        <label class="custom-input__label" for="surname" ></label>
+                        <input class="custom-input__field" type="text" name="surname" id="surname" placeholder="Фамилия*" aria-label="Фамилия" required>
+                    </div>  
+                      <div class="custom-input">    
+                          <label class="custom-input__label" for="email">Почта*</label>
+                          <input class="custom-input__field" type="email" name="email" placeholder="E-mail*" id="email" aria-label="email" required>
+                          <svg class="custom-input__field-icon" width="20" height="20" aria-hidden="true">
+                            <use xlink:href="/images/sprite.svg#icon-email"></use>
+                          </svg>
+                      </div>
                         <div class="custom-input">
-                          
-                            <label class="custom-input__label" for="email">Почта*</label>
-                            <input class="custom-input__field" type="email" name="email" placeholder="E-mail*" id="email" aria-label="email" required>
-                            <svg class="custom-input__field-icon" width="20" height="20" aria-hidden="true">
-                              <use xlink:href="/images/sprite.svg#icon-email"></use>
-                            </svg>
-                          
+                            <label class="custom-input__label" for="name" ></label>
+                            <input class="custom-input__field" type="text" id="name" name="name" placeholder="Имя*" aria-label="Имя" required>
                         </div>
-                          <div class="custom-input">
-                            
-                              <label class="custom-input__label" for="name" ></label>
-                              <input class="custom-input__field" type="text" id="name" name="name" placeholder="Имя*" aria-label="Имя" required>
-                            
-                          </div>
-                  <!-- </div> -->
-                  <!-- <div class="form__group-inner-right"> -->
-                      <div class="custom-input">
-                        
-                          <label class="custom-input__label" for="birthday">Дата рождения*</label>
-                          <input class="custom-input__field" type="text" name="birthday" id="birthday" aria-label="Дата рождения" placeholder="dd/mm/yyyy" required>
-                          <svg class="custom-input__field-icon" width="20" height="20" aria-hidden="true">
-                            <use xlink:href="/images/sprite.svg#icon-calendar"></use>
-                          </svg>
-                        
-                      </div>
-                      <div class="custom-input">
-                        
-                          <label class="custom-input__label" for="surname" ></label>
-                          <input class="custom-input__field" type="text" id="second-surname" name="second-surname" placeholder="Отчество*" aria-label="Отчество" required>
-                        
-                      </div>
-                      <div class="custom-input">
-                        
-                          <label class="custom-input__label" for="phone">Телефон*</label>
-                          <input class="custom-input__field" type="tel" name="phone" placeholder="+7 (XXX) XXX-XX-XX" id="phone" aria-label="Номер телефона" required>
-                          <svg class="custom-input__field-icon" width="20" height="20" aria-hidden="true">
-                            <use xlink:href="/images/sprite.svg#icon-call"></use>
-                          </svg>
-                        
-                      </div>
-                  <!-- </div> -->
+                    <div class="custom-input">
+                        <label class="custom-input__label" for="birthday">Дата рождения*</label>
+                        <input class="custom-input__field" type="text" name="birthday" id="birthday" aria-label="Дата рождения" placeholder="dd/mm/yyyy" required>
+                        <svg class="custom-input__field-icon" width="20" height="20" aria-hidden="true">
+                          <use xlink:href="/images/sprite.svg#icon-calendar"></use>
+                        </svg>
+                    </div>
+                    <div class="custom-input">
+                        <label class="custom-input__label" for="surname" ></label>
+                        <input class="custom-input__field" type="text" id="second-surname" name="second-surname" placeholder="Отчество*" aria-label="Отчество" required>
+                    </div>
+                    <div class="custom-input">
+                        <label class="custom-input__label" for="phone">Телефон*</label>
+                        <input class="custom-input__field" type="tel" name="phone" placeholder="+7 (XXX) XXX-XX-XX" id="phone" aria-label="Номер телефона" required>
+                        <svg class="custom-input__field-icon" width="20" height="20" aria-hidden="true">
+                          <use xlink:href="/images/sprite.svg#icon-call"></use>
+                        </svg>
+                    </div>
                 </div>
               </fieldset>
               <fieldset class="form__group">
@@ -341,13 +326,13 @@
                       <input class="custom-input__radio" type="radio" value="specialist" name="radio-specialist" id="radio-specialist" aria-label="Специалист" required>
                       <label class="custom-input__radio-label" for="radio-specialist" >Специалист</label>
                     </div>
-                    <div class="">
+                    <div class="custom-input__wrapper">
                       <input class="custom-input__field custom-input__field--specialist" type="text"  name="name-person" placeholder="Иван Иванов" aria-label="ФИО сотрудника" required>
                     </div>
                   </div>
               </fieldset>
-              <div class="custom-input  custom-input--flat">
-                <textarea class="custom-input__field  custom-input__field--flat" id="message-candidate" placeholder="Сообщение" name="message-candidate"  aria-label="Сообщение" required></textarea>
+              <div class="custom-input  custom-input-text--flat">
+                <textarea class="custom-input__field custom-input__field-text  custom-input__field--flat" id="message-candidate" placeholder="Сообщение" name="message-candidate"  aria-label="Сообщение" required></textarea>
               </div>
               <div class="form__personal-data">
                 <input class="form__personal-data-input" type="checkbox" name="agree" id="agree">
