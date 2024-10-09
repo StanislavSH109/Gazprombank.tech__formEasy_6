@@ -138,12 +138,17 @@
 }
 
 .form-arrow {
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+    position: sticky;
+    width: 60px;
+}
+
+.form__arrow-button {
     border: none;
     cursor: pointer;
-    bottom: 0;
-    left: 0;
     background-color: unset;
-    position: sticky;
 }
 
 .form__personal-data-input {
