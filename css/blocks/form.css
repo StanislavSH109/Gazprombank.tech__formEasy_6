@@ -102,6 +102,7 @@
 .form__personal-data {
     display: flex;
     align-items: center;
+    margin: 0 0 83px 0;
 }
 
 .form__personal-data-agree {
@@ -116,22 +117,33 @@
     align-items: center;
 }
 
+.form__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
 .form__button-submit {
-    display: block;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: 1px solid rgba(25, 25, 239, 0.4);
     border-radius: 60px;
     padding: 11px 36px;
     background-color: #ffffff;
     color: rgba(25, 25, 239, 0.4);
     cursor: pointer;
+    width: 166px;
 }
 
 .form-arrow {
+    border: none;
     cursor: pointer;
-    position: absolute;
-    right: 0;
-    bottom: 50px;
+    bottom: 0;
+    left: 0;
+    background-color: unset;
+    position: sticky;
 }
 
 .form__personal-data-input {
@@ -141,6 +153,18 @@
     clip: (0 0 0 0);
     clip-path: inset(100%);
 }
+
+.form__personal-data-text {
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 400;
+    color: #9B9B9B;
+}
+
+.form__personal-data-text-link {
+    border-bottom: 1px solid #9B9B9B;
+}
+
 
 .form__personal-data-label {
     position: relative;
@@ -162,7 +186,6 @@
  
 .form__personal-icon-checked {
   display: none; 
-
 } 
 
 .form__personal-data-input:checked + .form__personal-data-label .form__personal-icon-checked {
