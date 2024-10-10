@@ -53,6 +53,21 @@
   clip-path: inset(100%);
 }
 
+.custom-input__radio-label {
+  padding: 0 0 0 40px;
+}
+
+.custom-input__radio-label::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #1919EF;
+  left: 0;
+}
+
 .custom-input--flat {
   width: 100%;
   grid-column: span 2;
