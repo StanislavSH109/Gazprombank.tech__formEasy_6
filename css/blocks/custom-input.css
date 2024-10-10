@@ -55,6 +55,7 @@
 
 .custom-input__radio:checked + .custom-input__radio-label:before,.custom-input__radio-label:before {
   background-color: #1919EF;
+  border: unset;
 }
 
 .custom-input__radio-label {
