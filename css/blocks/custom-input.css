@@ -53,6 +53,10 @@
   clip-path: inset(100%);
 }
 
+.custom-input__radio:checked + .custom-input__radio-label:before,.custom-input__radio-label:before {
+  background-color: #1919EF;
+}
+
 .custom-input__radio-label {
   padding: 0 0 0 40px;
   cursor: pointer;
@@ -61,13 +65,12 @@
 .custom-input__radio-label:before {
   content: "";
   position: absolute;
-  display: block;
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background-color: #1919EF;
+  border: 1px solid #ACB5BD;
   left: 0;
-  cursor: pointer;
+  background-color: transparent;
 }
 
 .custom-input__radio-label:after {
@@ -79,7 +82,7 @@
   width: 8px;
   border-radius: 50%;
   left: 0;
-  transform: translate(75%, -150%);
+  transform: translate(80%, -150%);
 }
 
 .custom-input--flat {
