@@ -46,6 +46,13 @@
   color: #9B9B9B;
 }
 
+.custom-input__radio {
+  position: absolute;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+}
+
 .custom-input--flat {
   width: 100%;
   grid-column: span 2;
