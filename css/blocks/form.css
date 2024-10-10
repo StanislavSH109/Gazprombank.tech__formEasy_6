@@ -32,6 +32,13 @@
     margin: 0 0 60px 0;
 }
 
+.form__group-inner-icon {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 0;
+}
+
 .form__group-name-icon {
     width: 20px;
     height: 20px;
