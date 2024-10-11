@@ -138,15 +138,14 @@
     width: 166px;
 }
 
-.form__arrow {
-    display: flex;
-    justify-content: flex-end;
-}
 
 .form__arrow-button {
     border: none;
     cursor: pointer;
     background-color: unset;
+    position: fixed;
+    right: 120px;
+    bottom: 140px;
 }
 
 .form__personal-data-input {
@@ -165,6 +164,10 @@
     transform: translate(50%, 60%);
     width: 10;
     height: 7px;
+}
+
+.form__group-input-checkbox:checked + .form__group-label:before {
+    border: 1px solid blue;
 }
 
 .form__group-icon-checked {
