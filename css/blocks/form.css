@@ -18,6 +18,15 @@
     margin: 0 0 60px 0;
 }
 
+.form__group-name-icon {
+    border: 1px solid #acb5bd;
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+}
+
 .form__group-inner {
     display: grid;
     grid-template-columns: repeat(2, auto);
